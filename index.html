@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO KIMETSU NO YAIBA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/estilos.css">
+    <link rel="stylesheet" href="./SRC/CSS/responsivos.css">
+    
+</head>
+
+<body>
+   
+    <header class="cabecalho"> 
+        <img class="logo" src="./SRC/imagens/logo.png" alt="Logo Kimetsu">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo" > Selecione um personagem </h1>
+
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="tanjiro" data-name = "Tanjiro" data-description=" Ele é um jovem corajoso e determinado que se torna um caçador de demônios após sua família ser brutalmente assassinada e sua irmã, Nezuko, ser transformada em um demônio.">
+                    <img src="./SRC/imagens/tanjirojpeg.jpg" alt="Personagem Tanjiro">
+                </li>
+
+                <li class="personagem" id="zenitsu" data-name = "Zenitsu" data-description = "Ele é conhecido por seu comportamento exagerado e constantemente demonstra medo e covardia diante das situações perigosas. No entanto, apesar de suas inseguranças, Zenitsu possui habilidades surpreendentes como espadachim.">
+                    <img src="./SRC/imagens/zenitsu.jpg" alt="Personagem Zenitsu">
+                </li>
+
+                <li class="personagem" id="inosuke"  data-name = "Inosuke" data-description= "Ele possui cabelos desgrenhados e usa uma máscara de javali que cobre seu rosto. Inosuke é conhecido por seu comportamento impulsivo e combativo, muitas vezes se envolvendo em confrontos sem pensar nas consequências.">
+                    <img src="./SRC/imagens/inosuke.jpg" alt="Personagem Inosuke">
+                </li>
+
+                <li class="personagem" id="nezuko" data-name = "Nezuko" data-description = "Nezuko era uma humana normal, porém, após um terrível incidente em que sua família foi atacada por demônios, ela se tornou um demônio. Apesar disso, Nezuko mantém sua personalidade gentil e afetuosa, o que a diferencia dos demônios tradicionais.">
+                    <img src="./SRC/imagens/nesuko.jpg" alt="Personagem Nesuko">
+                </li>
+
+                <li class="personagem" id="tomioka" data-name = "Tomioka" data-description = "Ele é extremamente habilidoso como espadachim e um dos mais fortes membros da trupe. Sua arma de escolha é uma espada Nichirin com um padrão de ondas regulares.">
+                    <img src="./SRC/imagens/tomiokatt.jpg" alt="Personagem Tomioka">
+                </li>
+
+                <li class="personagem" id="rengoku" data-name = "Rengoku" data-description = "Ele é reconhecido por sua impressionante habilidade com a espada e sua devoção em proteger os inocentes. Rengoku possui uma personalidade extrovertida e motivadora, sempre buscando inspirar os outros com sua paixão e entusiasmo pela luta contra os demônios.">
+                    <img src="./SRC/imagens/rengoku.jpg" alt="Personagem Rengoku">
+                </li>
+
+                <li class="personagem" id="akasa" data-name = "Akasa" data-description = "Ele é um dos antagonistas proeminentes na história e um dos Doze Kizuki, um grupo de poderosos demônios leais a Muzan, é conhecido por sua força incrível, agilidade sobrenatural e habilidades de luta excepcionais." >
+                    <img src="./SRC/imagens/akaza.jpg" alt="Personagem Akasa">
+                </li>
+
+                <li class="personagem" id="muzan" data-name = "Muzan" data-description = " Ele possui uma personalidade cruel, impiedosa e manipuladora. Como o primeiro demônio e o progenitor de muitos outros, Muzan é o líder secreto da sociedade dos demônios">
+                    <img src="./SRC/imagens/muzan.jpg" alt="Personagem Musan">
+                </li>
+
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./SRC/imagens/card-tanjiro.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Tanjiro</h2>
+                <p class="descricao-personagem" id="descricao-personagem"> Ele é um jovem corajoso e determinado que se torna um caçador de demônios após sua família ser brutalmente assassinada e sua irmã, Nezuko, ser transformada em um demônio.
+                    
+                </p>
+
+            </div>
+        </section>
+    </main>
+    <script src="./SRC/js/index.js"></script>
+</body>
+
+</html>
