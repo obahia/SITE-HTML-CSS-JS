@@ -4,7 +4,7 @@ body {
 	color: #ffffff;
 	height: 100vh;
 	overflow: hidden;
-	zoom: 0.76;
+	zoom: 0.60;
 }
 
 body::before {
@@ -87,9 +87,15 @@ body::before {
 }
 
 .personagem-selecionado .descricao-personagem {
-	font-size: 16px;
+	font-size: 24px;
 	line-height: 22px;
 	text-align: center;
 	margin-top: 20px;
 	width: 420px;
+}
+
+@media (max-width: 1120px) {
+    body {
+        overflow-y: auto;
+    }
 }
