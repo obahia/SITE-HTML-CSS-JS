@@ -17,7 +17,7 @@ personagens.forEach(personagem => {
        
         //passo 1 - pegar o elemento do personagem grande pra adicionar ass informações nele 
         const imagemPersonagemGrande = document.querySelector ('.personagem-grande');
-        console.log(imagemPersonagemGrande);
+        
 
         //     passo 2 - alterar a imagem do personagem grande 
         const idPersonagem = personagem.attributes.id.value;
