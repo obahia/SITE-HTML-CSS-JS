@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Bahia</title>
+    <link rel="stylesheet" href="stylecontato.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/logo-branco.png">
+
+</header>
+
+<body>
+
+
+    <header class="cabecalho">
+
+
+        <img class="logo" src="imagens/logo-branco.png" alt="Logo Barbearia">
+
+
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+ <form>
+
+    <div class="Form">
+
+        <div class="Informacoes">
+            <label>Nome e sobrenome</label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite seu nome" /><br><br>
+
+       
+        
+            <label>E-mail</label>
+            <br>
+            <input type="email" name="email" placeholder="seuemail@dominio.com" /><br><br>
+        
+
+        
+            <label>Telefone</label>
+            <br>
+            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx"><br><br>
+
+        
+            <label for="msg">Mensagem</label>
+            <br>
+            <textarea id="msg"></textarea><br>
+        </div>
+
+        <div class="contato-box">
+
+            <label>Como prefere o nosso contato? </label>
+
+            <div class="contato-opção">
+
+                <div class="contato">
+
+                    <input type="radio" name="opcao" value="E-mail" id="check-email">
+                    <label for="check-male">E-mail</label>
+
+                </div>
+
+                <div class="contato">
+
+                    <input type="radio" name="opcao" value="Telefone" id="check-tel">
+                    <label for="check-female">Telefone</label>
+
+                </div>
+
+                <div class="contato">
+
+                    <input type="radio" name="opcao" value="WhatsApp" id="check-whats">
+                    <label for="check-female">WhatsApp</label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="horario">
+            <label for="opcoes">Qual horário prefere ser atendido?</label> <br>
+            <select id="opcoes" name="opcoes">
+                <option value="opcao1">Manhã</option>
+                <option value="opcao2">Tarde</option>
+                <option value="opcao3">Noite</option>
+            </select>
+
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="inform" name="informacao" value="sim">
+            <label for="inform">Gostaria de receber nossas novidades por email?</label>
+
+        </div>
+
+        <div class="botao">
+            <br>
+            <button type="button" id="button" onclick="alert('Formulário enviado com sucesso')">Enviar Formulário</button>            
+            
+        </div>
+
+        <div class="tabela">
+
+            <table border="1">
+                <thead>
+                  <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Segunda-feira</td>
+                    <td rowspan="3">8h - 20h</td>  <!--o que informa ao navegador que essa célula deve se estender por três linhas na tabela.-->
+                  </tr>
+                  <tr>
+                    <td>Quarta-feira</td>
+                  </tr>
+                  <tr>
+                    <td>Sexta-feira</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+        </div>
+
+    </div>
+
+
+ </form>
+ <footer class="rodape">
+    <img class="rodape" src="imagens/logo-branco.png" alt="rodape barbearia">
+    <p>© Copyright Barbearia Alura 2023</p>
+</footer>
+
+</html>

@@ -1,0 +1,186 @@
+.cabecalho {
+    font-family: "Oxanium", cursive;
+    background-image:url('imagens/bg.jpg');
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    transition: background-image 0.5s ease; /* Transição para a imagem de fundo */
+
+
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.menu ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: x-large;
+}
+
+
+.menu li {
+    margin-right: 20px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    /* Permite posicionar a linha relativa a este elemento */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* Altura da linha */
+    bottom: -3px;
+    /* Posiciona a linha abaixo do texto */
+    left: 0;
+    background-color: transparent;
+    /* Cor inicial da linha (pode ser transparente) */
+    transition: background-color 0.3s ease;
+    /* Animação da mudança de cor */
+}
+
+.menu a:hover::after {
+    background-color: rgb(161, 22, 22);
+    /* Cor da linha quando passa o mouse por cima */
+}
+
+
+
+
+
+.Form{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: medium;
+    font-family: 'Oxanium', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.Informacoes label {
+    margin-top: 10px;
+    display: block; /* Cada label em uma linha separada */
+    margin-bottom: 2px; /* Espaçamento entre os labels */
+}
+
+.Informacoes input[type="text"],
+.Informacoes input[type="email"],
+.Informacoes input[type="tel"],
+.Informacoes textarea {
+    width: 400px; /* Define a largura dos inputs e textarea */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 8px; /* Arredonda as bordas */
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    margin-bottom: 4px; /* Espaçamento inferior entre os inputs */
+}
+
+.contato{
+
+    margin-bottom: 5px;
+    
+    font-size: medium;
+    
+}
+
+
+.botao button {
+    margin-bottom: 10px;
+    background-color: orange; /* Define a cor de fundo como laranja */
+    color: white; /* Define a cor do texto como branco */
+    padding: 15px 100px; /* Adiciona preenchimento interno ao botão */
+    font-size: 16px; /* Define o tamanho do texto do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição de cor no hover */
+
+}
+
+.botao button:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.rodape {
+    background-image: url('imagens/bg.jpg');
+    color: #ffffff;
+    text-align: center;
+    padding: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    transition: background-image 0.5s ease; /* Transição para a imagem de fundo */
+
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabela th, .tabela td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .tabela th {
+    background-color: orange;
+  }
+  
+  .tabela tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.horario{
+
+    margin-bottom: 5px;
+  
+}
+
+.horario select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    appearance: none; /* Remove a seta padrão do select */
+}
+
+.horario select:focus {
+    outline: none;
+    border-color: orange; /* Cor do contorno ao focar */
+    box-shadow: 0 0 5pxor orange; /* Sombra ao focar */
+}
+
+/* Animações */
+.horario select {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+  
+
+
+  
+  
+
+

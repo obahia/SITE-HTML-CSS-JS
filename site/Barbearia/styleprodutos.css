@@ -1,0 +1,92 @@
+.cabecalho {
+    font-family: "Oxanium", cursive;
+    background-image:url('imagens/bg.jpg');
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
+
+.logo {
+    max-width: 150px;
+}
+
+.menu ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: x-large;
+}
+
+
+.menu li {
+    margin-right: 20px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative; /* Permite posicionar a linha relativa a este elemento */ 
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da linha */
+    bottom: -3px; /* Posiciona a linha abaixo do texto */
+    left: 0;
+    background-color: transparent; /* Cor inicial da linha (pode ser transparente) */
+    transition: background-color 0.3s ease; /* Animação da mudança de cor */
+}
+
+.menu a:hover::after {
+    background-color: rgb(161, 22, 22);
+
+}
+
+.container-cartao{
+
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a linha abaixo se necessário */
+    gap: 20px; 
+
+}
+
+
+.imagem-com-texto  {
+    display: inline-block; /* Altera o display para permitir que a borda se ajuste à largura do conteúdo */
+    width: auto; /* Largura automática baseada no conteúdo interno */
+    padding: 10px; /* Espaçamento interno entre a borda e o conteúdo interno */
+    border: 4px solid #050505; /* Borda da div */
+    border-radius: 20px; /* Define um raio para as bordas, dando um efeito arredondado */
+    text-align: center;
+    margin: 20px ;
+}
+
+
+
+.imagem-com-texto:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao passar o mouse */
+    transform: translateY(-5px); /* Move ligeiramente para cima para criar um efeito de elevação */
+}
+
+.rodape {
+    background-image: url('imagens/bg.jpg');
+    color: #ffffff;
+    text-align: center;
+    padding: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}

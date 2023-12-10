@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como smartphones */
+}
+
+/* Estilos gerais */
+
+/* Estilos para telas menores, como smartphones */
+@media screen and (max-width: 768px) {
+    .logo {
+        /* Ajuste o tamanho da logo para telas menores, se necessário */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        /* Para telas menores, torne o menu vertical */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Outros estilos para tornar o layout responsivo */
+}
+
+/* Estilos para telas maiores, como desktops */
+@media screen and (min-width: 769px) {
+    /* Estilos específicos para telas maiores, se necessário */
+    /* Aqui você pode adicionar estilos específicos para telas maiores */
+}
+
+
+/* Estilos gerais */
+
+/* Estilos para telas menores, como smartphones */
+@media screen and (max-width: 768px) {
+    .logo {
+        /* Ajuste o tamanho da logo para telas menores, se necessário */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        /* Para telas menores, torne o menu vertical */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-cartao {
+        /* Ajustes para telas menores */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagem-com-texto {
+        /* Ajustes para telas menores */
+        width: 90%; /* Ou outra largura desejada */
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* Outros estilos para tornar o layout responsivo */
+}
+
+/* Estilos para telas maiores, como desktops */
+@media screen and (min-width: 769px) {
+    /* Estilos específicos para telas maiores, se necessário */
+    /* Aqui você pode adicionar estilos específicos para telas maiores */
+}
+
+/* Estilos gerais */
+
+/* Estilos para telas menores, como smartphones */
+@media screen and (max-width: 768px) {
+    .logo {
+        /* Ajuste o tamanho da logo para telas menores, se necessário */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        /* Para telas menores, torne o menu vertical */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Form {
+        /* Ajustes para telas menores */
+        padding: 20px;
+    }
+
+    /* Outros estilos para tornar o layout responsivo */
+}
+
+/* Estilos para telas maiores, como desktops */
+@media screen and (min-width: 769px) {
+    /* Estilos específicos para telas maiores, se necessário */
+    /* Aqui você pode adicionar estilos específicos para telas maiores */
+}
