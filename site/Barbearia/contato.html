@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" type="imagex/png" href="imagens/logo-branco.png">
 
 </header>
@@ -32,119 +34,110 @@
             </ul>
         </nav>
     </header>
- <form>
 
-    <div class="Form">
 
+    <form class="Form" onsubmit="return false">
+
+
+        <div class="meio">
+            
+        </div>
         <div class="Informacoes">
-            <label>Nome e sobrenome</label>
+            <label><strong>Nome e sobrenome</strong></label>
             <br>
-            <input type="text" name="nome" placeholder="Digite seu nome" /><br><br>
+            <input type="text" name="nome" placeholder="Digite seu nome" required /><br><br>
 
-       
-        
-            <label>E-mail</label>
+
+
+            <label><strong>E-mail</strong></label>
             <br>
-            <input type="email" name="email" placeholder="seuemail@dominio.com" /><br><br>
-        
+            <input type="email" name="email" placeholder="seuemail@dominio.com" required="@" /><br><br>
 
-        
-            <label>Telefone</label>
+
+
+            <label><strong>Telefone</strong></label>
             <br>
-            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx"><br><br>
+            <input type="tel" id="telefone" placeholder="(xxx) xxxxx-xxxx" maxlength="12"><br><br>
 
-        
-            <label for="msg">Mensagem</label>
+
+            <label for="msg"><strong>Mensagem</strong></label>
             <br>
             <textarea id="msg"></textarea><br>
         </div>
 
         <div class="contato-box">
 
-            <label>Como prefere o nosso contato? </label>
+            <label><strong>Como prefere o nosso contato?</strong> </label>
 
             <div class="contato-opção">
 
-                <div class="contato">
 
-                    <input type="radio" name="opcao" value="E-mail" id="check-email">
-                    <label for="check-male">E-mail</label>
 
-                </div>
-
-                <div class="contato">
-
-                    <input type="radio" name="opcao" value="Telefone" id="check-tel">
-                    <label for="check-female">Telefone</label>
-
-                </div>
-
-                <div class="contato">
-
-                    <input type="radio" name="opcao" value="WhatsApp" id="check-whats">
-                    <label for="check-female">WhatsApp</label>
-
-                </div>
+                <input type="radio" name="opcao" value="E-mail" id="check-email">
+                Email
+                <input type="radio" name="opcao" value="Telefone" id="check-tel">
+                Telefone
+                <input type="radio" name="opcao" value="WhatsApp" id="check-whats">
+                WhatsApp
 
             </div>
 
-        </div>
+            <div class="horario">
+                <label for="opcoes"><strong>Qual horário prefere ser atendido?</strong></label> <br>
+                <select id="opcoes" name="opcoes">
+                    <option value="opcao1">Manhã</option>
+                    <option value="opcao2">Tarde</option>
+                    <option value="opcao3">Noite</option>
+                </select>
 
-        <div class="horario">
-            <label for="opcoes">Qual horário prefere ser atendido?</label> <br>
-            <select id="opcoes" name="opcoes">
-                <option value="opcao1">Manhã</option>
-                <option value="opcao2">Tarde</option>
-                <option value="opcao3">Noite</option>
-            </select>
+            </div>
 
-        </div>
+            <div class="checkbox">
+                <input type="checkbox" id="inform" name="informacao" value="sim">
+                <label for="inform">Gostaria de receber nossas novidades por email?</label>
 
-        <div class="checkbox">
-            <input type="checkbox" id="inform" name="informacao" value="sim">
-            <label for="inform">Gostaria de receber nossas novidades por email?</label>
+            </div>
 
-        </div>
-
-        <div class="botao">
-            <br>
-            <button type="button" id="button" onclick="alert('Formulário enviado com sucesso')">Enviar Formulário</button>            
-            
-        </div>
-
-        <div class="tabela">
-
-            <table border="1">
-                <thead>
-                  <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Segunda-feira</td>
-                    <td rowspan="3">8h - 20h</td>  <!--o que informa ao navegador que essa célula deve se estender por três linhas na tabela.-->
-                  </tr>
-                  <tr>
-                    <td>Quarta-feira</td>
-                  </tr>
-                  <tr>
-                    <td>Sexta-feira</td>
-                  </tr>
-                </tbody>
-              </table>
-              
-              
-        </div>
-
-    </div>
+            <div class="botao">
+                <br>
+                <button type="button" id="button" onclick="alert('Formulário enviado com sucesso')">Enviar
+                    Formulário</button>
+                <span class="mensagem-erro">Por favor, preencha todos os campos!</span>
 
 
- </form>
- <footer class="rodape">
-    <img class="rodape" src="imagens/logo-branco.png" alt="rodape barbearia">
-    <p>© Copyright Barbearia Alura 2023</p>
-</footer>
+            </div>
 
+            <div class="tabela">
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td rowspan="3">8h - 20h</td>
+                            <!--o que informa ao navegador que essa célula deve se estender por três linhas na tabela.-->
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+    </form>
+    <footer class="rodape">
+        <img class="rodape" src="imagens/logo-branco.png" alt="rodape barbearia">
+        <p>© Copyright Barbearia Alura 2023</p>
+    </footer>
+</body>
 </html>

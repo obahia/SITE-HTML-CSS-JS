@@ -13,6 +13,8 @@
 
 }
 
+
+
 .logo {
     max-width: 150px;
 }
@@ -61,19 +63,19 @@
 }
 
 
-
-
-
 .Form{
-    margin-left: 70px;
-    margin-right: 70px;
+
+    margin-left: auto;
+    margin-right: auto;
     font-size: medium;
+    text-align: center; /* Alinha o conteúdo ao centro */
     font-family: 'Oxanium', sans-serif;
     font-family: 'Roboto', sans-serif;
   
 }
 
 .Informacoes label {
+    
     margin-top: 10px;
     display: block; /* Cada label em uma linha separada */
     margin-bottom: 2px; /* Espaçamento entre os labels */
@@ -83,6 +85,10 @@
 .Informacoes input[type="email"],
 .Informacoes input[type="tel"],
 .Informacoes textarea {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    text-align: center;
     width: 400px; /* Define a largura dos inputs e textarea */
     padding: 8px; /* Espaçamento interno */
     border-radius: 8px; /* Arredonda as bordas */
@@ -90,14 +96,30 @@
     margin-bottom: 4px; /* Espaçamento inferior entre os inputs */
 }
 
-.contato{
 
-    margin-bottom: 5px;
-    
-    font-size: medium;
-    
+.mensagem-erro {
+    display: none;
+    color: red;
 }
 
+.Form:invalid .mensagem-erro {
+    display: block;
+}
+
+
+
+.contato-box{
+    margin-top:1%;
+   
+}
+.contato-opção{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: large;
+    align-items: center;
+
+    
+}
 
 .botao button {
     margin-bottom: 10px;
@@ -120,24 +142,26 @@
 .rodape {
     background-image: url('imagens/bg.jpg');
     color: #ffffff;
-    text-align: center;
+    
     padding: auto;
     margin-left: 70px;
     margin-right: 70px;
-    transition: background-image 0.5s ease; /* Transição para a imagem de fundo */
-
 }
 
 .tabela table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-bottom: 2%;
+    margin: 0 auto;
+  
   }
   
   .tabela th, .tabela td {
     border: 1px solid #dddddd;
     padding: 8px;
     text-align: center;
+    width: 25%;
   }
   
   .tabela th {
@@ -149,11 +173,10 @@
     transition: background-color 0.3s ease;
 }
 
-.horario{
 
-    margin-bottom: 5px;
-  
-}
+
+
+
 
 .horario select {
     padding: 8px;
